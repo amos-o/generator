@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h2>Hi</h2>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Hello, you!</h1>
+        <p class="lead">This is a simple app to generate random strings.</p>
+        <hr class="my-4">
+        <p>It uses pure python to do that! How awesome!</p>
+        <p class="lead">
+          <button class="btn btn-primary btn-lg" role="button">Generate</button>
+        </p>
+        <div class="target"></div>
+      </div>
+    </div>
+{% endblock %}
