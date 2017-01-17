@@ -4,13 +4,14 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-3">Hello, you!</h1>
-        <p class="lead">This is a simple app to generate random strings.</p>
+        <p class="lead">This is a simple app to generate random 16 character strings.</p>
         <hr class="my-4">
         <p>It uses pure python to do that! How awesome!</p>
         <p class="lead">
-          <button class="btn btn-primary btn-lg" role="button">Generate</button>
+          <button class="btn btn-primary btn-lg" id="generator-button" role="button">Generate</button>
         </p>
-        <div class="target"></div>
+        <div id="target" class="alert alert-success hidden" role="alert">
+        </div>
       </div>
     </div>
 {% endblock %}
